@@ -1,0 +1,18 @@
+[package]
+name = "panacea-observability"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+metrics = { workspace = true }
+metrics-exporter-prometheus = { workspace = true }
+opentelemetry = { workspace = true }
+opentelemetry-otlp = { workspace = true }
+opentelemetry_sdk = { workspace = true }
+axum = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+tracing-opentelemetry = "0.25"
+opentelemetry-semantic-conventions = "0.16"

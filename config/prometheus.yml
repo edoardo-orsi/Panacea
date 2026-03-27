@@ -1,0 +1,34 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  # Uncomment as each service is added to docker-compose.yml:
+  # - job_name: scraper-service
+  #   static_configs:
+  #     - targets: ["scraper-service:8080"]
+  # - job_name: nutrition-service
+  #   static_configs:
+  #     - targets: ["nutrition-service:8080"]
+  # - job_name: scoring-service
+  #   static_configs:
+  #     - targets: ["scoring-service:8080"]
+  # - job_name: eval-service
+  #   static_configs:
+  #     - targets: ["eval-service:8080"]
+  # - job_name: recipe-service
+  #   static_configs:
+  #     - targets: ["recipe-service:8080"]
+  # - job_name: supplement-service
+  #   static_configs:
+  #     - targets: ["supplement-service:8080"]
+  # - job_name: tracker-service
+  #   static_configs:
+  #     - targets: ["tracker-service:8080"]
+  # - job_name: pricing-service
+  #   static_configs:
+  #     - targets: ["pricing-service:8080"]
